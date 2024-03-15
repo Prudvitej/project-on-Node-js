@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Social Site</title>
+    <link rel="shortcut icon" href="bg.png" type="image/x-icon" />
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(to bottom right, #252525, #1a1a1a);
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+      }
+
+      .section {
+        width: 45%;
+        border: 1px solid #333333;
+        padding: 20px;
+        background-color: #333333;
+        color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .post {
+        margin-bottom: 30px;
+      }
+
+      .picture {
+        margin-bottom: 20px;
+      }
+
+      .saved {
+        color: red;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      img:hover {
+        transform: scale(1.05);
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #333333;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .logo {
+        width: 100px;
+        height: auto;
+      }
+
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: inline;
+        color: #ffffff;
+      }
+
+      nav ul li {
+        margin-right: 20px;
+        display: inline;
+        color: #ffffff;
+      }
+
+      nav ul li:last-child {
+        margin-right: 0;
+      }
+      nav ul li a {
+        color: #ffffff; /* Change hyperlink color */
+        text-decoration: none; /* Remove underline */
+        transition: color 0.3s ease-in-out; /* Smooth color transition */
+      }
+
+      nav ul li a:hover {
+        color: #ff2600; /* Change color on hover */
+      }
+
+      h2 {
+        background-color: #ffffff;
+        color: #ff2600;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+
+      p {
+        line-height: 1.5;
+      }
+
+      button {
+        background-color: #00ffdd;
+        color: #000000;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s ease-in-out;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <!-- Your logo goes here -->
+      <img src="bg.png" alt="Logo" class="logo" />
+      <ul>
+        <li><a href="#pictures-section">Pictures</a></li>
+        <li><a href="#posts-section">Posts</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="section" id="pictures-section">
+        <h2>Post containt</h2>
+        <div class="picture">
+          <img src="t20 wc.jpg" alt="Placeholder Image" /><br /><br /><br />
+          <button class="like-btn" data-type="post" data-id="1">❤️</button>
+          <button class="save-btn" data-type="picture" data-id="1">💾</button>
+        </div>
+        <br /><br />
+        <div class="picture">
+          <img src="petrol price.jpg" alt="Placeholder Image" /><br /><br />
+          <br />
+          <button class="like-btn" data-type="post" data-id="1">❤️</button>
+          <button class="save-btn" data-type="picture" data-id="2">💾</button>
+        </div>
+        <br /><br />
+      </div>
+      <div class="section" id="posts-section">
+        <h2>Articals</h2>
+        <div class="post">
+          <h3>CSK Vs RCB in IPL 2024 Opener in Chennai</h3>
+          <p>
+            <b> Defending champions Chennai Super Kings </b>will take on
+            <b>Royal Challengers Bangalore</b> in the 2024 IPL season-opener in
+            Chennai on March 22, the BCCI announced Thursday while unveiling the
+            schedule for only the first 17 days of the popular T20 league.
+            <br />
+            The roster for the remaining matches will be announced once the
+            dates for the upcoming general elections are announced early next
+            month. <br />
+            The first 17 days of the tournament will see 21 matches taking
+            place. Delhi Capitals will take on Punjab Kings on March 23 in
+            Mohali.
+          </p>
+          <button class="like-btn" data-type="post" data-id="1">❤️</button>
+          <button class="save-btn" data-type="post" data-id="1">💾</button>
+        </div>
+        <div class="post">
+          <h3>A Milestone for Ashwin</h3>
+          <p>
+            Team India’s ace spinner <b>Ravichandran Ashwin </b> will be playing
+            his <b>100th Test match</b> next week. <br />The bowling
+            all-rounder’s close friends may be present at the ground to watch
+            him cross the milestone, but his family members are not yet sure
+            whether they will be able to watch him perform live. <br />Ashwin’s
+            mother, who was hospitalised, is now recovering, and the family may
+            need to be with her. With 507 wickets, 35 five-wicket hauls, 24
+            four-wicket figures in an innings, 10-wicket hauls in a match eight
+            times and over 3300 runs and five centuries to his credit, Ashwin’s
+            Test career has been nothing less than iconic.
+          </p>
+          <button class="like-btn" data-type="post" data-id="1">❤️</button>
+          <button class="save-btn" data-type="post" data-id="2">💾</button>
+        </div>
+        <div class="post">
+          <h3>
+            3,376 transactions go missing from SBI’s electoral bond disclosure?
+          </h3>
+          <p>
+            The Election Commission of India on Thursday uploaded two sets of
+            documents shared to it by the State Bank of India revealing the
+            purchase and encashment of electoral bonds between April 12, 2019
+            and January 11, 2024. One document reveals the purchase of electoral
+            bonds by companies and another reveals encashment of those bonds by
+            political parties. According to these documents, there were 18,871
+            transactions of purchase worth over Rs 12,155.51 crore (Rs
+            1,21,55,51,32,000) made by companies during this period, while
+            20,422 transactions worth Rs 12,769.08 crore (Rs 1,27,69,08,93,000)
+            were recorded against political parties towards encashment.
+          </p>
+          <button class="like-btn" data-type="post" data-id="1">❤️</button>
+          <button class="save-btn" data-type="post" data-id="2">💾</button>
+        </div>
+        <div class="post">
+          <h3>
+            Telangana CM to Launch Congress Lok Sabha Campaign at Indravelli
+          </h3>
+          <p>
+            TPCC president and Chief Minister A. Revanth Reddy will launch the
+            Congress campaign for the Lok Sabha polls on February 2 at
+            Indravelli in Adilabad district, site of the massacre of Gond
+            tribals in 1981 and the place where the Goddess Nagoba temple is
+            located. Indravelli also holds sentimental value for Revanth Reddy.
+            He addressed his first public meeting as TPCC president in August
+            2021 in Indravelli, titled Dalitha Girijana Dandora.The Indravelli
+            event will be Revanth Reddy's first public meeting after he assumed
+            charge as Chief Minister of Telangana on December 7 last. His
+            campaign launch previously scheduled for January 26 was postponed
+            due to his prior engagements. The TPCC political affairs committee
+            (PAC) is expected to meet on January 30 at Gandhi Bhavan to initiate
+            the process of identifying candidates for Lok Sabha polls.
+          </p>
+          <button class="like-btn" data-type="post" data-id="1">❤️</button>
+          <button class="save-btn" data-type="post" data-id="2">💾</button>
+        </div>
+        <div class="post">
+          <h3>IT-Hyderabad Start-up WiSig Partners with Intel for 5G ORAN</h3>
+          <p>
+            WiSig Networks, a start-up born out of IIT-Hyderabad, has teamed up
+            with Intel Corporation to unveil the ORAN Massive MIMO ULPI Radio
+            Solution in the 5G space, to revolutionise how we experience mobile
+            connectivity. Simply put, WiSig's innovation strengthens the phone's
+            signal, especially in places where it’s weak. The technology is open
+            and adaptable, meaning it can work with different devices, from
+            phones to smart gadgets. IIT-H’s Prof. Kiran Kuchi, mastermind
+            behind WiSig Networks, said the technology promised 10x improvement
+            in uplink cell edge coverage. Mike Fitton, vice-president of the
+            Networking Business Unit in Intel’s Programmable Solutions Group,
+            commended WiSig's efforts, and expressed excitement about the
+            potential of the technology to redefine the status quo in AN
+            protocol implementations.
+          </p>
+          <button class="like-btn" data-type="post" data-id="1">❤️</button>
+          <button class="save-btn" data-type="post" data-id="2">💾</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      const saveBtns = document.querySelectorAll(".save-btn");
+
+      saveBtns.forEach((btn) => {
+        btn.addEventListener("click", function () {
+          const type = this.dataset.type;
+          const id = this.dataset.id;
+          const parentSection = document.querySelector(`#${type}s-section`);
+          const savedSection = document.querySelector("#saved-section");
+
+          if (this.classList.contains("saved")) {
+            // Unsave the item
+            this.classList.remove("saved");
+            this.textContent = "💾";
+            const savedItem = savedSection.querySelector(
+              `[data-type="${type}"][data-id="${id}"]`
+            );
+            if (savedItem) {
+              savedItem.remove();
+            }
+          } else {
+            // Save the item
+            this.classList.add("saved");
+            this.textContent = "🔒";
+            const originalItem = parentSection
+              .querySelector(`[data-type="${type}"][data-id="${id}"]`)
+              .cloneNode(true);
+            const unsaveBtn = originalItem.querySelector(".save-btn");
+            unsaveBtn.classList.add("saved");
+            unsaveBtn.textContent = "🔒";
+            savedSection.appendChild(originalItem);
+          }
+        });
+      });
+      const likeBtns = document.querySelectorAll(".like-btn");
+
+      likeBtns.forEach((btn) => {
+        btn.addEventListener("click", function () {
+          const type = this.dataset.type;
+          const id = this.dataset.id;
+          const likesCount = parseInt(this.dataset.likes) || 0;
+
+          // Increment the likes count and update the button text
+          this.textContent = `❤️ ${likesCount + 1}`;
+          this.dataset.likes = likesCount + 1;
+        });
+      });
+    </script>
+  </body>
+</html>
